@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDGE CUT | Furniture Store</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #07d2e0c7;
+      --dark-color: #2C2C2C;
+      --light-color: #f8f9fa;
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--dark-color);
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 1rem 0;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--primary-color) !important;
+    }
+    .nav-link {
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: var(--primary-color);
+    }
+
+    /* Hero */
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-family: var(--font-heading);
+      font-size: 3.5rem;
+    }
+    .btn-custom {
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 28px;
+      margin: 10px;
+      transition: background 0.3s;
+    }
+    .btn-custom:hover {
+      background: #6f4320;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-family: var(--font-heading);
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--primary-color);
+      margin: 10px auto 0;
+    }
+
+    /* Cards */
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* About */
+    #about {
+      background: var(--light-color);
+      padding: 4rem 0;
+    }
+
+    /* Contact */
+    #contact {
+      background: var(--dark-color);
+      color: #fff;
+      padding: 4rem 0;
+    }
+    #contact .form-control {
+      border-radius: 10px;
+    }
+    .social-icons i {
+      font-size: 20px;
+      margin: 0 10px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    .social-icons i:hover {
+      color: var(--primary-color);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #bbb;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">EDGE CUT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#furniture">Furnitures</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="d-flex align-items-center">
+        <a href="#login" class="nav-link fw-bold">Login</a>
+        <i class="fa-solid fa-magnifying-glass ms-3"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+<section class="hero-section d-flex align-items-center" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-md-6 text-white text-center text-md-start">
+          <h1>FOR ALL YOUR<br>FURNITURE NEEDS</h1>
+          <p class="lead mt-3">Elegant, modern, and timeless pieces for your home.</p>
+          <a href="#furniture" class="btn btn-custom">Contact US</a>
+          <a href="#about" class="btn btn-outline-light btn-custom">About US</a>
+        </div>
+        
+        <div class="col-md-6 text-center">
+          <img src="new.png" class="img-fluid rounded" alt="hero image">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Furniture Section -->
+<section class="py-5" id="furniture">
+    <div class="container">
+      <h2 class="section-title">OUR Furnitures</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="file-5aeef50f5c5a6.jpg" class="card-img-top" alt="Modern Chair">
+            <div class="card-body">
+              <h5 class="card-title">Modern Chair</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$100.00</span>
+                <a href="#" class="">BUY NOW</a>
+            </div>
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images.jpg" class="card-img-top" alt="Wooden Table">
+            <div class="card-body">
+              <h5 class="card-title">Wooden Table</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$200.00</span>
+                <a href="#" class="">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images (1).jpg" class="card-img-top" alt="Comfort Sofa">
+            <div class="card-body">
+              <h5 class="card-title">Comfort Sofa</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold">$200.00</span>
+                <a href="#" class="">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Left -->
+        <div class="col-md-6 mb-4">
+          <img src="pngtree-young-woman-relaxing-at-sofa-with-laptop-computer-vase-style-vector-png-image_52213252.png" 
+               class="img-fluid rounded" alt="About Us">
+        </div>
+        <!-- Text Right -->
+        <div class="col-md-6">
+          <h2 class="section-title text-start">About Us</h2>
+          <p>We at EDGE CUT specialize in creating premium quality furniture that combines timeless design with modern functionality. Our goal is to bring comfort and elegance into every home.</p>
+          <a href="#" class="btn btn-custom">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Blog -->
+<section class="py-5" id="blog">
+    <div class="container">
+      <h2 class="section-title">Latest Blog</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images (2).jpg" class="card-img-top" alt="Blog 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Choosing the Right Sofa</h5>
+              <p class="card-text flex-grow-1">Tips on finding the perfect sofa for your living room.</p>
+              <a href="#" class="btn btn-custom mt-auto">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="images (3).jpg" class="card-img-top" alt="Blog 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Wood vs. Metal Furniture</h5>
+              <p class="card-text flex-grow-1">Comparing durability and aesthetics of popular materials.</p>
+              <a href="#" class="btn btn-custom mt-auto">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="abc.jpg" class="card-img-top" alt="Blog 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Decorating Small Spaces</h5>
+              <p class="card-text flex-grow-1">Creative ideas to make the most out of compact areas.</p>
+              <a href="#" class="btn btn-custom mt-auto">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+      <h2 class="section-title text-white">Contact Us</h2>
+      <div class="row">
+        
+        <div class="col-md-6 mb-4">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your phone number">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send Message</button>
+          </form>
+        </div>
+  
+        
+        <div class="col-md-6">
+          <div class="mb-3">
+          
+            <img src="gmap-12.jpg" class="img-fluid rounded" alt="Location Map">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
